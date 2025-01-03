@@ -1,0 +1,44 @@
+{
+  "general":{
+    "package":"Forgejo-http-docker",
+    "name":"Forgejo (http)",
+    "version":"9.0.3",
+    "depends":[
+      "docker-ce(>=20.10.17.r1)"
+    ],
+    "developer":"Codeberg",
+    "maintainer":"Mr4Mike4",
+    "email":"",
+    "website":"https://forgejo.org/",
+    "architecture":"x86-64",
+    "firmware":"3.5.0"
+  },
+  "adm-desktop":{
+    "app":{
+      "port":3100,
+      "protocol":"http",
+      "type":"custom",
+      "url":"/" 
+    },
+    "privilege":{
+      "accessible":"users", 
+      "customizable":true 
+    }
+  },
+  "register":{
+    "share-folder":[
+      {
+        "name":"Docker",
+        "description":"Data and files directory for Docker Apps"
+      }           
+    ],
+    "boot-priority":{
+      "start-order":85,
+      "stop-order":40
+    },
+    "port":[
+      "T3100",
+      "T3122"
+    ]
+  }
+}
