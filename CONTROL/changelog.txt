@@ -1,0 +1,22 @@
+Forgejo v10.0
+
+Forgejo v10.0 is the last version to allow a transparent upgrade from Gitea v1.22 or lower. In 2023 Forgejo was a soft fork, a set of patches maintained by the Forgejo community on top of Gitea. Early 2024 it became a hard fork and the codebases started to diverge. Forgejo and Gitea are now effectively different codebases although they share the same history back from the early days of Gogs.
+
+New features
+Below is short selection of the most notable changes. The complete list is available in the release notes.
+
+- PR: Rework the new repository dialog.New repository dialog
+- PR: Git notes can be modified via the API or the UI.Git notes web UI
+- PR: Add button to create Markdown table.Add a table to a comment
+- PR: If you select a portion of a comment and use the ‘Quote reply’ feature in the context menu, only that portion will be quoted. The markdown syntax is preserved.Comment including a highlighted text quote
+- PR: Add link to show all issues and pull requests.Issues view including all of them
+- PR: Highlight user mention in comments and commit messages.Highlighted user mention in a comment
+- PR & PR: Add a “summary card” to issues, PRs, repositories and releases for consumption by OpenGraph clients.
+- PR: Filepath filter for code search.
+- PR: Add links to commit lists in contributors graph page.
+- PR: Add search to releases page.
+- PR: Migrate TOTP secrets to keying.
+- PR: When bleve is used for issue search, a fuzzy search now applies to each word instead of all of them, as if they were a phrase. For instance, searching for activitypub spam moderation previously returned no result in Forgejo discussions and now returns the relevant issues. If the search results are too broad, or for searching exact phrases prefer using an exact search. Sorting by newest is still available as a non default option under Sort. The query was also reworked to improve performances. It makes a significant difference for large instances such as Codeberg.
+- PR: Improve performance of notifications page for MySQL.
+
+https://forgejo.org/2025-01-release-v10-0/
