@@ -1,6 +1,6 @@
 # Forgejo-ADM
 
-__Forgejo version__: _`9.0.3`_
+__Forgejo version__: _`11.0.1`_
 
 forgejo-adm is an application for ADM the operating system of [ASUSTOR](https://www.asustor.com/) the server brand of [ASUS](https://www.asus.com/).
 This application uses the docker package available [here](https://codeberg.org/forgejo/forgejo).
