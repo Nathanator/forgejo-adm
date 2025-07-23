@@ -3,7 +3,7 @@
 echo "forgejo-adm: --== post-install ==--"
 
 # Environment variables
-FORGEJO_VERSION=$(cat $APKG_PKG_DIR/forgejo_version)
+FORGEJO_VERSION=$(cat "$APKG_PKG_DIR"/forgejo_version)
 FORGEJO_CONTAINER='Forgejo'
 FORGEJO_IMAGE="codeberg.org/forgejo/forgejo:$FORGEJO_VERSION"
 FORGEJO_DATA_PATH='/share/Docker/Forgejo'
@@ -32,19 +32,19 @@ fi
 
 # Pull the container image
 echo "forgejo-adm: Fetching data"
-docker pull $FORGEJO_IMAGE
+docker pull "$FORGEJO_IMAGE"
 
 # Installing creating container
 echo "forgejo-adm: Creating container"
 docker create -i -t --name=$FORGEJO_CONTAINER \
   --publish 3122:22 \
   --publish 3100:3000 \
-  --env USER_UID=$FORGEJO_UID \
-  --env USER_GID=$FORGEJO_GID \
+  --env USER_UID="$FORGEJO_UID" \
+  --env USER_GID="$FORGEJO_GID" \
   --restart=unless-stopped \
   --volume $FORGEJO_DATA_PATH:/data \
   --volume /etc/localtime:/etc/localtime:ro \
-  $FORGEJO_IMAGE
+  "$FORGEJO_IMAGE"
 
 echo "forgejo-adm: Installation/Update complete"
 
