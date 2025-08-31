@@ -2,7 +2,7 @@
   "general":{
     "package":"Forgejo-http-docker",
     "name":"Forgejo (http)",
-    "version":"12.0.0",
+    "version":"12.0.2",
     "depends":[
       "docker-ce(>=20.10.17.r1)"
     ],

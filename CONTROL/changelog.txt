@@ -1,3 +1,69 @@
+Forgejo v12.0.2
+
+Release notes
+    Security bug fixes
+        PR (backported): fix: email comments are removed from email addresses
+        PR (backported): fix: validate CSRF on non-safe methods
+        PR (backported): fix: use credential helpers for git clones
+        PR (backported): fix: consistently enforce 2FA on OpenID 2.0
+        PR (backported): fix: delete old auth token upon replacing primary email
+        PR (backported): fix: require password login for creation of new token
+        PR (backported): fix: ensure GetUserByEmail only considers validated emails
+        PR (backported): fix: don't allow credentials in migrate/push mirror URL
+        PR (backported): fix: only redirect to a new owner (organization or user) if the user has permissions to view the new owner
+    User Interface bug fixes
+        PR (backported): fix: wrap items in gitignore dropdown
+        PR (backported): fix(ui): move file rename notice to before pagination
+        PR (backported): fix: show mergebox when only manual merge is allowed
+    Localization
+        Updates from Codeberg Translate: #8995 (backport of #8535, #8673, #8744, #8826, #8891)
+    Bug fixes
+        PR (backported): a corrupted Forgejo Actions scheduled workflow is disabled
+        PR (backported): fix: Actions workflows triggered by comments or labels to pull requests may access secrets
+        PR (backported): fix(code-search): fix broken pagination.
+        PR (backported): fix: correctly get stats for API commits
+        PR (backported): [12.0/forgejo] fix: de-duplicate Forgejo Actions job names when needed
+        PR (backported): fix: make ssh key verification command more robust
+        PR (backported): fix: trim trailing slash in WebFinger OIDC issuer link
+        PR (backported): fix: correct release link in feed
+        PR (backported): fix: add .forgejo/CODEOWNERS support (#8746)
+        PR (backported): fix: allow admins to always rename users
+        PR (backported): fix: store code challenge correctly in session
+    Included for completeness but not user-facing (chores, etc.)
+        PR (backported): fix: prevent pull requests from being merged multiple times
+        PR (backported): fix: redirect from /{username}/{reponame}/pulls/{index} to issue if index is a issue
+        PR (backported): fix: minio initialization can freeze indefinitely if misconfigured
+        PR (backported): fix: migrate new Github release assets
+        PR (backported): fix: compare week as numbers and not as strings
+        PR: Update dependency go to v1.24.6 (v12.0/forgejo)
+        PR: Update https://data.forgejo.org/forgejo/forgejo-build-publish action to v5.4.1 (v12.0/forgejo)
+        PR (backported): fix(test): TestActionsArtifactOverwrite needs ordered query for pgsql
+        PR (backported): chore(ci): send mail when daily integration tests fail
+        PR (backported): fix: allow double digit epoch for Debian packages
+        PR (backported): fix: return error when user is not repo writer
+        PR (backported): fix: query token auth version mismatch
+
+Forgejo v12.0.1
+
+Release notes
+    User Interface bug fixes
+        PR (backported): allow for tracked time to be removed again
+        PR (backported): correct image source for quoted reply
+        PR (backported): prevent render failure on faulty org settings post
+    Bug fixes
+        PR (backported): Revert "feat: remove API authentication methods that uses the URL query (#7924)"
+        PR (backported): update i18n usage in comments
+        PR (backported): upgrade fails or hang at migration[31]: Migrate maven package name concatenation
+        PR (backported): rebase and fast forward merge breaks commit signatures
+        PR (backported): make the action feed resilient to database inconsistencies
+        PR (backported): make sure to use unaltered fields when saving a shadow copy for updated profiles or comments
+        PR (backported): follow symlinks for local assets
+        PR (backported): use correct ACME default
+    Included for completeness but not user-facing (chores, etc.)
+        PR (backported): Revert "fix(ci): pull stylus from github:stylus/stylus#0.57.0 (#8625)"
+        PR (backported): fix(ci): pull stylus from github:stylus/stylus#0.57.0
+        PR (backported): chore: disable E2E test for webkit
+
 Forgejo v12.0.0
 
 Release notes
