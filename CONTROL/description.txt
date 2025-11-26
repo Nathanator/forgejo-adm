@@ -1,4 +1,8 @@
-Forgejo is a Free Software platform for collaboration and productivity in software development. It offers a familiar environment to GitHub users, easy installation and maintenance, and a focus on security, scaling, federation and privacy.
+Forgejo is a Free Software platform for collaboration and productivity in software development.
+
+It offers a familiar environment to GitHub users, easy installation, maintenance, a focus on security, scaling,
+federation, and privacy.
+
 Forgejo is a fork of Gitea that adds features and improvements.
 
 Find the Forgejo-ADM repository on GitHub by following this link: https://github.com/Mr4Mike4/forgejo-adm

@@ -1,4 +1,4 @@
-Forgejo v13.0
+Forgejo v13.0.3
 
-https://forgejo.org/2025-10-release-v13-0/
+https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/13.0.3.md
 
